@@ -17,7 +17,7 @@
 <img width="446" alt="2 Маршрутизатор" src="https://github.com/FoxySOTKA/-/assets/141597247/9c3111ee-d404-4ffc-a9bd-328d43b4cbdf">
 
 - Получившиеся схема в pkt формате
-https://github.com/FoxySOTKA/-/blob/main/shema.pkt
+https://github.com/FoxySOTKA/-/blob/main/полученая_схема.pkt
 
 ### Задание 2
 - Запустите две виртуальные машины Linux, установите и настройте сервис Keepalived как в лекции.
