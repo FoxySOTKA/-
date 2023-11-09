@@ -28,3 +28,32 @@ https://github.com/FoxySOTKA/-/blob/main/полученая_схема.pkt
 
 #### Результат
 
+#!/bin/bash
+if [[ $(netstat -tuln | grep LISTEN | grep :80) ]] && [[ -f /var/www/html/index.nginx-debian.html ]]; then
+        exit 0
+else
+        sudo systemctl stop keepalived
+fi
+
+
+
+vrrp_script check_script {
+      script "/home/chistov/check_nginx.sh"
+      interval 3
+}
+
+vrrp_instance VI_1 {
+        state MASTER
+        interface enp0s3
+        virtual_router_id 25
+        priority 255
+        advert_int 1
+
+        virtual_ipaddress {
+              192.168.255.225/24
+        }
+
+        track_script {
+                   check_script
+                }
+}
