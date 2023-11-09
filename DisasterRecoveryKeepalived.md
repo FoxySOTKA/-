@@ -12,12 +12,12 @@
 #### Результат
 - Скриншот настройки первого маршрутизатора
 <img width="449" alt="1 маршрутизатор" src="https://github.com/FoxySOTKA/-/assets/141597247/0efcb60f-93e3-4751-9ad6-423cc985c5c8">
-Keepalived
+
 - Скриншот настройки второго маршрутизатора
 <img width="446" alt="2 Маршрутизатор" src="https://github.com/FoxySOTKA/-/assets/141597247/9c3111ee-d404-4ffc-a9bd-328d43b4cbdf">
 
 - Получившиеся схема в pkt формате
-"C:\Users\seuyl\Downloads\полученая_схема.pkt"
+https://github.com/FoxySOTKA/-/blob/main/shema.pkt
 
 ### Задание 2
 - Запустите две виртуальные машины Linux, установите и настройте сервис Keepalived как в лекции.
